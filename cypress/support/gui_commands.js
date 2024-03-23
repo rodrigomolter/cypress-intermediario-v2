@@ -13,8 +13,15 @@ Cypress.Commands.add('login', (
       cy.get('.qa-user-avatar').should('be.visible')
     }
 
+    const validate = () => {
+      cy.visit('/')
+      cy.location('pathname', { timeout: 1000 })
+        .should('not.eq', '/users/sign_in')
+    }
+
     const options = {
       cacheAcrossSpecs: true,
+      validate,
     }
     
     if (cacheSession) {
@@ -38,3 +45,6 @@ Cypress.Commands.add('login', (
     cy.contains('Create project').click()
   })
   
+  Cypress.Commands.add('createIssue' () => {
+    
+  })
