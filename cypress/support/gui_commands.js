@@ -44,7 +44,4 @@ Cypress.Commands.add('login', (
     cy.get('.qa-initialize-with-readme-checkbox').check()
     cy.contains('Create project').click()
   })
-  
-  Cypress.Commands.add('createIssue' () => {
-    
-  })
+ 
