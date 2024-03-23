@@ -1,4 +1,4 @@
-# Cypress in the GitLab 
+# Testing Gitlab Plataform with Cypress
 
 Sample project for the intermediate course of the Talking About Testing online school.
 
